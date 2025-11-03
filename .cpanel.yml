@@ -1,0 +1,7 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/viaconsu/public_html/
+    - /bin/rm -rf $DEPLOYPATH/*
+    - npm install
+    - npm run build
+    - /bin/cp -R out/* $DEPLOYPATH
