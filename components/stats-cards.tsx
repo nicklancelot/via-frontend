@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { useAuth } from "@/lib/auth-context"
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api"
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.viaconsulting.mg/api"
 
 // Configuration des types avec icônes et couleurs
 const typeConfig: Record<string, { icon: string; bgColor: string }> = {
